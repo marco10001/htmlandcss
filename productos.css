@@ -1,0 +1,93 @@
+header{
+	background-color:#BBBBBB ;
+	padding: 20px 0;
+}
+
+/*EL FAMOSO CENTRAR UN DIV*/
+.caja{
+	width: 940px; /*se usa este ancho por el tamaño comun de las pantallas*/ 
+	position: relative; /*necesito que la posicion sea relative para que se mueva*/
+	margin: 0 auto; /*coloco el margen en 0 para superior e inferior y en automatico para los costados*/
+}
+
+nav{
+	position: absolute;
+	top: 125px;
+	right: 0;
+}
+
+nav li{
+	display: inline-block; /*hace que los items no ocupen toda la pagina y se pongan uno al lado del otro*/
+	margin: 0 0 0 15px; /*esto le da el espaciamiento, arriba, abajo, derecha, izquierda*/
+}
+
+nav a{
+	text-transform: uppercase; /*le da las mayusculas*/
+	color: #000000; 
+	font-weight: bold; /*le hace el negrito*/
+	text-decoration: none; /*le saca el subrallado por defecto a los links*/
+}
+
+nav a:hover{ /*hover captura el movimiento del mouse*/
+	color: #c78c18;
+	text-decoration: wavy underline;
+}
+
+.productos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.productos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border-color: black;
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+.productos li:hover{ /*captura cuando el mouse esta sobre el elemento*/
+	border-color:#c78c18 ;
+}
+
+.productos li:active{/*captura cuando el mouse hace click sobre el elemento*/
+	border-color: #128809;
+}
+
+.productos h2{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.productos li:hover h2{
+	font-size: 30px;
+}
+
+.producto-descripcion{
+	font-size: 18px;
+}
+
+.producto-precio{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer{
+	text-align: center;
+	background: url(imagenes/bg.jpg);
+	padding: 40px;
+}
+
+.copyright{
+	font-size: 10px;
+	color: #ffffff;
+	margin: 25px;
+}
